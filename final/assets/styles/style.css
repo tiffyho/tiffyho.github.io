@@ -1,0 +1,201 @@
+html, body {
+    margin:0;
+    padding:0;
+}
+
+body {
+    background-color: #BAD7C2;
+    overflow: scroll;
+    background: linear-gradient( to top, #9FBCA7 0%, #9FBCA7 83%, #BAD7C2 17%, #BAD7C2 100%);
+}
+
+
+#navbar {
+    position: fixed;
+    background-color: #9FBCA7;
+    top:0%;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 10;
+    font-family: 'Amatic SC';
+    font-weight: bolder;
+    font-size: 200%;
+    letter-spacing: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+#button {
+    margin-right: 60px;
+    text-decoration: none;
+}
+
+#button:hover {
+    text-decoration: underline;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#landingpage {
+    position: relative;
+    padding-top: 200px;
+    z-index: -1;
+    padding-bottom: 200px;
+}
+
+@keyframes typing {
+    from {width: 0}
+    to {width: 100%}
+}
+
+@keyframes blinking {
+    from {border-color: transparent;}
+    to {border-color: white;}
+}
+
+#welcome {
+    position: absolute;
+    right: 30%;
+    top: 30%;
+}
+.welcome {
+    font-family: 'Amatic SC';
+    font-weight: bolder;
+    font-size: 650%;
+    letter-spacing: 5px;
+    color: white;
+    border-right: .04em solid white;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    width: 0%;
+    animation: typing 1.5s steps(10) forwards, blinking 1s infinite;
+}
+
+#landingimage {
+    margin-top: 8%;
+}
+
+#part1 {
+    display: flex;
+    flex-direction: row;
+    background-color: #BAD7C2;
+    margin: 60px;
+    align-items: center;
+    border-radius: 30px;
+    justify-content: space-between;
+    padding-bottom: 35px;
+}
+
+#aboutme {
+    width: 70%;
+}
+
+@keyframes swinging {
+    0%{transform: rotate(15deg);}
+    50%{transform: rotate(-10deg)}
+    100%{transform: rotate(15deg);}
+}
+
+#plant {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    animation-name: swinging;
+    transform-origin: 50% 0;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    z-index: 0;
+}
+
+.space {
+    height: 140px;
+}
+
+#part2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+
+}
+
+#line {
+    margin-bottom: 130px;
+}
+
+#neonlights {
+    background-color: #BAD7C2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 30px;
+    margin: 60px;
+}
+
+#neonlights:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 20%);
+    cursor: pointer;
+}
+
+#neonimage1 {
+    width: 28%;
+    margin: 60px;
+}
+
+#summary {
+    width: 45%;
+}
+
+#moderndays {
+    background-color: #BAD7C2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 30px;
+    margin: 60px;
+}
+
+#moderndays:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 20%);
+    cursor: pointer;
+}
+
+#modernimage1 {
+    width: 28%;
+    margin: 60px;
+}
+
+h1 {
+    font-family: 'Amatic SC';
+    font-weight: bolder;
+    font-size: 460%;
+    letter-spacing: 5px;
+    color: white;
+}
+
+h3 {
+    text-decoration: none;
+}
+
+p {
+    font-family: 'Patrick Hand';
+    font-weight: normal;
+    font-size: 200%;
+    letter-spacing: 5px;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
